@@ -14,8 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
 
     @IBAction func validateUser() {
-        let name = userName.text!
-        let password = password.text!
+        let name = userName.text
+        let password = password.text
         if name == "user", password == "123" {
             print("Welcom")
         } else {

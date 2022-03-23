@@ -12,6 +12,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
+
+    @IBAction func validateUser() {
+        let name = userName.text!
+        let password = password.text!
+        if name == "user", password == "123" {
+            print("Welcom")
+        } else {
+            print("Error")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

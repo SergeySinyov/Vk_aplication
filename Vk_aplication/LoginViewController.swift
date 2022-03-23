@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
 
-    @IBAction func validateUser() {
+    func validateUser() {
         let name = userName.text
         let password = password.text
         if name == "user", password == "123" {

@@ -124,7 +124,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="k4S-oc-VLb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQ2-FG-rAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Opy-oW-JZQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="qXj-BG-xVt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3u3-tN-QwW">
@@ -139,6 +138,7 @@
                         <segue destination="ZC2-tm-xmW" kind="relationship" relationship="viewControllers" id="moY-Ud-P2b"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQ2-FG-rAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="58" y="-294"/>
         </scene>

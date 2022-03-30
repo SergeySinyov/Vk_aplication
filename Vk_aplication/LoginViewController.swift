@@ -10,7 +10,10 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var userBameTextFild: UITextField!
+    @IBOutlet weak var userNameTextFild: UITextField!
+    
+    
+    //    @IBOutlet weak var userBameTextFild: UITextField!
     @IBOutlet weak var passwordTextFild: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -73,14 +76,36 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButton(_ sender: Any) {
-        let name = userBameTextFild.text
+
+    }
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+
+        let name = userNameTextFild.text
         let password = passwordTextFild.text
+
         if name == "user", password == "123" {
-            print("Welcom")
+            return true
         } else {
-            print("Error")
+            // Создаем контроллер
+
+            let alert = UIAlertController(title: "Ошибка", message: "Введены не верные имя пользователя и пароль",
+                                          preferredStyle: .alert)
+
+            // Создаем кнопку для UIAlertController
+            let action  = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+
+            // Добавляем кнопку на UIAlertController
+            alert.addAction(action)
+
+            // Показываем UIAlertController
+            present(alert, animated: true, completion: nil)
+
+            return false
         }
     }
+
+
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

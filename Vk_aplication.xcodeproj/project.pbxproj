@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A832F59A27F13A5200EDAEA3 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59927F13A5200EDAEA3 /* FriendsTableViewController.swift */; };
+		A832F59C27F13A9300EDAEA3 /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59B27F13A9300EDAEA3 /* GroupTableViewController.swift */; };
+		A832F59E27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59D27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift */; };
+		A832F5A027F13B5600EDAEA3 /* SearchGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59F27F13B5600EDAEA3 /* SearchGroupTableViewController.swift */; };
 		A8555E2D27EB0704004FF98E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8555E2C27EB0704004FF98E /* AppDelegate.swift */; };
 		A8555E2F27EB0704004FF98E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8555E2E27EB0704004FF98E /* SceneDelegate.swift */; };
 		A8555E3427EB0704004FF98E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8555E3227EB0704004FF98E /* Main.storyboard */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A832F59927F13A5200EDAEA3 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		A832F59B27F13A9300EDAEA3 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		A832F59D27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		A832F59F27F13B5600EDAEA3 /* SearchGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupTableViewController.swift; sourceTree = "<group>"; };
 		A8555E2927EB0704004FF98E /* Vk_aplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vk_aplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8555E2C27EB0704004FF98E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8555E2E27EB0704004FF98E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +110,11 @@
 				A8555E2C27EB0704004FF98E /* AppDelegate.swift */,
 				A8555E2E27EB0704004FF98E /* SceneDelegate.swift */,
 				A8555E3227EB0704004FF98E /* Main.storyboard */,
+				A832F59F27F13B5600EDAEA3 /* SearchGroupTableViewController.swift */,
+				A832F59D27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift */,
+				A832F59B27F13A9300EDAEA3 /* GroupTableViewController.swift */,
 				A8555E5C27EB07E8004FF98E /* LoginViewController.swift */,
+				A832F59927F13A5200EDAEA3 /* FriendsTableViewController.swift */,
 				A8555E3527EB0707004FF98E /* Assets.xcassets */,
 				A8555E3727EB0707004FF98E /* LaunchScreen.storyboard */,
 				A8555E3A27EB0707004FF98E /* Info.plist */,
@@ -259,7 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8555E5D27EB07E8004FF98E /* LoginViewController.swift in Sources */,
+				A832F59E27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift in Sources */,
+				A832F5A027F13B5600EDAEA3 /* SearchGroupTableViewController.swift in Sources */,
+				A832F59C27F13A9300EDAEA3 /* GroupTableViewController.swift in Sources */,
 				A8555E2D27EB0704004FF98E /* AppDelegate.swift in Sources */,
+				A832F59A27F13A5200EDAEA3 /* FriendsTableViewController.swift in Sources */,
 				A8555E2F27EB0704004FF98E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,7 +31,7 @@ class GroupTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellMyGroup", for: indexPath) as? GroupTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFootballGroup", for: indexPath) as? GroupTableViewCell
         let group = groups[indexPath.row]
         cell?.avatarGroupFootball.image = UIImage(named: group.avatar)
         cell?.labelFootbal.text = group.name

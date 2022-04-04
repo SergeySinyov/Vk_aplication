@@ -25,7 +25,7 @@ class SearchGroupTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellSearchGroupAvatar", for: indexPath) as? SearchGroupTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFilmsGroup", for: indexPath) as? SearchGroupTableViewCell
         let group = searchGroups[indexPath.row]
         cell?.avatarFilms.image = UIImage(named: group.avatar)
         cell?.labelFilms.text = group.name

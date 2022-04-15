@@ -16,7 +16,7 @@ struct Friend {
 
 class FriendsTableViewController: UITableViewController {
 
-    let friends: [Friend] = [
+    var friends: [Friend] = [
         Friend(name: "Sergey", avatar: "avatar", photos: ["photoOne", "photoTwo", "photoThree"]),
         Friend(name: "Andrey", avatar: "avatarTwo", photos: ["photoFour", "photoFive", "photoSix"]),
         Friend(name: "Elena", avatar: "avatarThree", photos: ["photoSeven", "photoEight", "photoNine"])
@@ -43,23 +43,15 @@ class FriendsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let cell = sender as? FriendTableViewCell,
               let index = tableView.indexPath(for: cell)?.row,
-        let photoVC = segue.destination as? PhotoCollectionViewController else {
+              let photoVC = segue.destination as? PhotoCollectionViewController else {
             return
         }
 
         let friend = friends[index]
         photoVC.friendsPhotos = friend.photos
     }
-
-    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        return UISwipeActionsConfiguration(actions: [UIContextualAction(style: .normal, title: "Удалить", handler:
-            { _, _, block in
-
-            block(true)
-        })])
-    }
-
 }
+
 
 
 

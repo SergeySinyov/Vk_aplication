@@ -11,10 +11,7 @@ class SearchGroupTableViewCell: UITableViewCell {
 
     @IBOutlet weak var avatarFilms: UIImageView!
     @IBOutlet weak var labelFilms: UILabel!
-    @IBOutlet weak var avatarFasion: UIImageView!
-    @IBOutlet weak var labelFasion: UILabel!
-    @IBOutlet weak var avatarWebDesing: UIImageView!
-    @IBOutlet weak var labelWebDesing: UILabel!
+   
     
 
 

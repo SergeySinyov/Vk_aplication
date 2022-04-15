@@ -10,10 +10,7 @@ import UIKit
 class GroupTableViewCell: UITableViewCell {
     @IBOutlet weak var avatarGroupFootball: UIImageView!
     @IBOutlet weak var labelFootbal: UILabel!
-    @IBOutlet weak var avatarGroupNews: UIImageView!
-    @IBOutlet weak var labelNews: UILabel!
-    @IBOutlet weak var avatarGroupCars: UIImageView!
-    @IBOutlet weak var labelCars: UILabel!
+   
 
     override func awakeFromNib() {
         super.awakeFromNib()

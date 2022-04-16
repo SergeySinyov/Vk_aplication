@@ -11,7 +11,6 @@ class GroupTableViewCell: UITableViewCell {
     @IBOutlet weak var avatarGroupFootball: UIImageView!
     @IBOutlet weak var labelFootbal: UILabel!
    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

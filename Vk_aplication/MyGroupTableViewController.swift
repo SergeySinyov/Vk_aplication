@@ -42,7 +42,6 @@ class MyGroupTableViewController: UITableViewController {
     }
 }
 
-
 extension MyGroupTableViewController: SearchGroupTableViewControllerDelegate {
     func userUnsubscribe(group: Group) {
         myGroups.removeAll(where:  { $0.id == group.id } )

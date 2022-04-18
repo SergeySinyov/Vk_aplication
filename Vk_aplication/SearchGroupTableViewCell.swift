@@ -11,11 +11,6 @@ class SearchGroupTableViewCell: UITableViewCell {
 
     @IBOutlet weak var avatarFilms: UIImageView!
     @IBOutlet weak var labelFilms: UILabel!
-   
-    
-
-
-
 
     override func awakeFromNib() {
         super.awakeFromNib()

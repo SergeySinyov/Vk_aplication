@@ -7,6 +7,11 @@
 
 import UIKit
 
+struct GroupedGroup {
+    let charakter: Character
+    var groups: [Group] // структура
+}
+
 protocol SearchGroupTableViewControllerDelegate {
     func userUnsubscribe(group: Group)
     func userSubscribe(group: Group)
@@ -15,9 +20,34 @@ protocol SearchGroupTableViewControllerDelegate {
 class SearchGroupTableViewController: UITableViewController {
 
     let allGroups = Group.allGroups
-    var myGroups: [Group] = []
+    var myGroups: [Group] = [] // создание масива
+
+    // начало метода
+    var groupedGroups: [GroupedGroup] {
+        var result = [GroupedGroup] ()
+
+        for group in allGroups {
+            guard let character = group.name.first else {
+                continue
+            }
+
+            if let groupedIndex = result.firstIndex(where: { $0.charakter == character }) {
+                result[groupedIndex].groups.append(group)
+            } else {
+
+                let groupedGroup = GroupedGroup(charakter: character, groups: [group])
+                result.append(groupedGroup)
+            }
+        }
+
+        return result
+    } // конец метода
 
     var delegate: SearchGroupTableViewControllerDelegate?
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return groupedGroups.count // изменение под группы
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +55,19 @@ class SearchGroupTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allGroups.count
+        let groupedGroup = groupedGroups[section]
+        return groupedGroup.groups.count // аналагичные изменения как сверху
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let groupedGroup = groupedGroups[section]
+        return String(groupedGroup.charakter) // добавлние хедера
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFilmsGroup", for: indexPath) as? SearchGroupTableViewCell
-        let group = allGroups[indexPath.row]
+        let groupedGroup = groupedGroups[indexPath.section] // нахождение секций
+        let group = groupedGroup.groups[indexPath.row]
         cell?.avatarFilms.image = UIImage(named: group.avatar)
         cell?.labelFilms.text = group.name
         return cell ?? UITableViewCell()

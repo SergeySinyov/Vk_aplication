@@ -25,12 +25,12 @@ class FriendsTableViewController: UITableViewController {
         Friend(name: "Sergey", avatar: "avatar", photos: ["photoOne", "photoTwo", "photoThree"]),
         Friend(name: "Andrey", avatar: "avatarTwo", photos: ["photoFour", "photoFive", "photoSix"]),
         Friend(name: "Elena", avatar: "avatarThree", photos: ["photoSeven", "photoEight", "photoNine"]),
-        Friend(name: "Diana", avatar: "avatarFour", photos: ["photoTen", "photoEleven", "photoTwelve"]),
+        Friend(name: "Juliya", avatar: "avatarFour", photos: ["photoTen", "photoEleven", "photoTwelve"]),
         Friend(name: "Danil", avatar: "avatarFive", photos: ["photoThirteen", "photoFourteen", "photoFiveteen"]),
-        Friend(name: "Anna", avatar: "avatarSix", photos: ["photoSixteen", "photoSeventeen", "photoEighteen"]),
+        Friend(name: "Mary", avatar: "avatarSix", photos: ["photoSixteen", "photoSeventeen", "photoEighteen"]),
         Friend(name: "Nik", avatar: "avatarSeven", photos: ["photoNineteen", "photoTwenty", "photoTwentyOne"]),
         Friend(name: "Tomas", avatar: "avatarEight", photos: ["photoTwentyTwo", "photoTwentyThree", "photoTwentyFour"]),
-        Friend(name: "David", avatar: "avatarNine", photos: ["photoTwentyFive", "photoTwentySix", "photoTwentySeven"]),
+        Friend(name: "Zack", avatar: "avatarNine", photos: ["photoTwentyFive", "photoTwentySix", "photoTwentySeven"]),
         Friend(name: "Bella", avatar: "avatarTen", photos: ["photoTwentyEight", "photoTwentyNine", "photoThirty"])
     ]
 
@@ -86,7 +86,7 @@ class FriendsTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let cell = sender as? FriendTableViewCell,
-              let index = tableView.indexPath(for: cell)?.row,
+              let index = tableView.indexPath(for: cell)?.section,
               let photoVC = segue.destination as? PhotoCollectionViewController else {
             return
         }

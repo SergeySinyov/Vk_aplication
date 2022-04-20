@@ -18,6 +18,7 @@ class PhotoCollectionViewController: UICollectionViewController {
 
     }
 
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return friendsPhotos.count
     }

@@ -10,7 +10,10 @@ import UIKit
 
 class MyGroupTableViewController: UITableViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var myGroups: [Group] = []
+    var searhGroups: [Group] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +22,19 @@ class MyGroupTableViewController: UITableViewController {
             myGroups.append(firstGroup)
         }
 
+        searhGroups = myGroups
+
+        searchBar.delegate = self
+
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myGroups.count
+        return searhGroups.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFootballGroup", for: indexPath) as? GroupTableViewCell
-        let group = myGroups[indexPath.row]
+        let group = searhGroups[indexPath.row]
         cell?.avatarGroupFootball.image = UIImage(named: group.avatar)
         cell?.labelFootbal.text = group.name
         return cell ?? UITableViewCell()
@@ -45,12 +52,23 @@ class MyGroupTableViewController: UITableViewController {
 extension MyGroupTableViewController: SearchGroupTableViewControllerDelegate {
     func userUnsubscribe(group: Group) {
         myGroups.removeAll(where:  { $0.id == group.id } )
-        tableView.reloadData()
+        updateFilterResult(searchText: searchBar.text ?? "")
     }
     
     func userSubscribe(group: Group) {
         myGroups.append(group)
-        tableView.reloadData()
+        updateFilterResult(searchText: searchBar.text ?? "")
     }
 
+}
+
+extension MyGroupTableViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        updateFilterResult(searchText: searchText)
+    }
+
+    func updateFilterResult(searchText: String) {
+        searhGroups = myGroups.filter { $0.name.lowercased().hasPrefix(searchText.lowercased()) }
+        tableView.reloadData()
+    }
 }

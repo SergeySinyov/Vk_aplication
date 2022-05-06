@@ -9,7 +9,7 @@ import UIKit
 
 struct GroupedGroup {
     let charakter: Character
-    var groups: [Group] // структура
+    var groups: [Group]
 }
 
 protocol SearchGroupTableViewControllerDelegate {
@@ -20,9 +20,8 @@ protocol SearchGroupTableViewControllerDelegate {
 class SearchGroupTableViewController: UITableViewController {
 
     let allGroups = Group.allGroups
-    var myGroups: [Group] = [] // создание масива
+    var myGroups: [Group] = []
 
-    // начало метода
     var groupedGroups: [GroupedGroup] {
         var result = [GroupedGroup] ()
 
@@ -41,12 +40,12 @@ class SearchGroupTableViewController: UITableViewController {
         }
 
         return result
-    } // конец метода
+    }
 
     var delegate: SearchGroupTableViewControllerDelegate?
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return groupedGroups.count // изменение под группы
+        return groupedGroups.count
     }
 
     override func viewDidLoad() {
@@ -56,17 +55,17 @@ class SearchGroupTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let groupedGroup = groupedGroups[section]
-        return groupedGroup.groups.count // аналагичные изменения как сверху
+        return groupedGroup.groups.count
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let groupedGroup = groupedGroups[section]
-        return String(groupedGroup.charakter) // добавлние хедера
+        return String(groupedGroup.charakter)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFilmsGroup", for: indexPath) as? SearchGroupTableViewCell
-        let groupedGroup = groupedGroups[indexPath.section] // нахождение секций
+        let groupedGroup = groupedGroups[indexPath.section]
         let group = groupedGroup.groups[indexPath.row]
         cell?.avatarFilms.image = UIImage(named: group.avatar)
         cell?.labelFilms.text = group.name

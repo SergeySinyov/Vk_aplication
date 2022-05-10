@@ -22,16 +22,16 @@ struct FriendedFriend {
 class FriendsTableViewController: UITableViewController {
 
     var friends: [Friend] = [
-        Friend(name: "Sergey", avatar: "avatar", photos: ["photoOne", "photoTwo", "photoThree"]),
-        Friend(name: "Andrey", avatar: "avatarTwo", photos: ["photoFour", "photoFive", "photoSix"]),
-        Friend(name: "Elena", avatar: "avatarThree", photos: ["photoSeven", "photoEight", "photoNine"]),
-        Friend(name: "Juliya", avatar: "avatarFour", photos: ["photoTen", "photoEleven", "photoTwelve"]),
-        Friend(name: "Danil", avatar: "avatarFive", photos: ["photoThirteen", "photoFourteen", "photoFiveteen"]),
-        Friend(name: "Mary", avatar: "avatarSix", photos: ["photoSixteen", "photoSeventeen", "photoEighteen"]),
-        Friend(name: "Nik", avatar: "avatarSeven", photos: ["photoNineteen", "photoTwenty", "photoTwentyOne"]),
-        Friend(name: "Tomas", avatar: "avatarEight", photos: ["photoTwentyTwo", "photoTwentyThree", "photoTwentyFour"]),
-        Friend(name: "Zack", avatar: "avatarNine", photos: ["photoTwentyFive", "photoTwentySix", "photoTwentySeven"]),
-        Friend(name: "Bella", avatar: "avatarTen", photos: ["photoTwentyEight", "photoTwentyNine", "photoThirty"])
+        Friend(name: "Синёв Сергей", avatar: "avatar", photos: ["photoOne", "photoTwo", "photoThree"]),
+        Friend(name: "Андреев Николай", avatar: "avatarTwo", photos: ["photoFour", "photoFive", "photoSix"]),
+        Friend(name: "Ефремова Елена", avatar: "avatarThree", photos: ["photoSeven", "photoEight", "photoNine"]),
+        Friend(name: "Голубева Юлия", avatar: "avatarFour", photos: ["photoTen", "photoEleven", "photoTwelve"]),
+        Friend(name: "Ковалёв Данил", avatar: "avatarFive", photos: ["photoThirteen", "photoFourteen", "photoFiveteen"]),
+        Friend(name: "Морева Мария", avatar: "avatarSix", photos: ["photoSixteen", "photoSeventeen", "photoEighteen"]),
+        Friend(name: "Гаврилов Николай", avatar: "avatarSeven", photos: ["photoNineteen", "photoTwenty", "photoTwentyOne"]),
+        Friend(name: "Шварц Томас", avatar: "avatarEight", photos: ["photoTwentyTwo", "photoTwentyThree", "photoTwentyFour"]),
+        Friend(name: "Джобс Стив", avatar: "avatarNine", photos: ["photoTwentyFive", "photoTwentySix", "photoTwentySeven"]),
+        Friend(name: "Цукерберк Марк", avatar: "avatarTen", photos: ["photoTwentyEight", "photoTwentyNine", "photoThirty"])
     ]
 
     var friendedFriends: [FriendedFriend] {

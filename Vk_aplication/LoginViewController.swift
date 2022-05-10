@@ -89,8 +89,7 @@ class LoginViewController: UIViewController {
         } else {
             // Создаем контроллер
 
-            let alert = UIAlertController(title: "Ошибка", message: "Введены не верные имя пользователя и пароль",
-                                          preferredStyle: .alert)
+            let alert = UIAlertController(title: "Ошибка", message: "Введены не верные имя пользователя и пароль", preferredStyle: .alert)
 
             // Создаем кнопку для UIAlertController
             let action  = UIAlertAction(title: "Ок", style: .cancel, handler: nil)

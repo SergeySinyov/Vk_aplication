@@ -14,12 +14,12 @@ struct Group {
     let avatar: String
 
     static var allGroups: [Group] = [
-        Group(id: "1", name: "Footbal", avatar: "groupFootball"),
-        Group(id: "2", name: "News", avatar: "groupNews"),
-        Group(id: "3", name: "Cars", avatar: "groupCar"),
-        Group(id: "4", name: "Films", avatar: "groupFilms"),
-        Group(id: "5", name: "Fasion", avatar: "groupFasion"),
-        Group(id: "6", name: "WebDesing", avatar: "groupWebDesign")
+        Group(id: "1", name: "Футбол", avatar: "groupFootball"),
+        Group(id: "2", name: "Новости Мира", avatar: "groupNews"),
+        Group(id: "3", name: "Авто каждый день", avatar: "groupCar"),
+        Group(id: "4", name: "Новинки Кино", avatar: "groupFilms"),
+        Group(id: "5", name: "Мода", avatar: "groupFasion"),
+        Group(id: "6", name: "Веб дизайн", avatar: "groupWebDesign")
     ]
 
 }

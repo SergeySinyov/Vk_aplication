@@ -12,12 +12,26 @@ private let reuseIdentifier = "Cell"
 class PhotoCollectionViewController: UICollectionViewController {
 
     var friendsPhotos: [String] = []
+//
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        guard let layout = collectionViewLayout as? UICollectionViewFlowLayout else {
+//            return
+//        }
+//
+//        layout.estimatedItemSize = .zero
+//
+//        let side = collectionView.frame.width / 3
+//
+//        layout.itemSize = CGSize(width: side, height: side)
+//
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return friendsPhotos.count

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A820C68B282AE3B4008C480D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820C68A282AE3B3008C480D /* LoadingViewController.swift */; };
 		A832F59A27F13A5200EDAEA3 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59927F13A5200EDAEA3 /* FriendsTableViewController.swift */; };
 		A832F59C27F13A9300EDAEA3 /* MyGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59B27F13A9300EDAEA3 /* MyGroupTableViewController.swift */; };
 		A832F59E27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832F59D27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A820C68A282AE3B3008C480D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		A832F59927F13A5200EDAEA3 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		A832F59B27F13A9300EDAEA3 /* MyGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupTableViewController.swift; sourceTree = "<group>"; };
 		A832F59D27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				A8555E2C27EB0704004FF98E /* AppDelegate.swift */,
 				A8555E2E27EB0704004FF98E /* SceneDelegate.swift */,
 				A8555E3227EB0704004FF98E /* Main.storyboard */,
+				A820C68A282AE3B3008C480D /* LoadingViewController.swift */,
 				A857F684282531FB00469C9B /* NewsLikeControl.swift */,
 				A8AD7F85282000DF000B7F86 /* CategoryHeadrView.xib */,
 				A8AD7F8728200120000B7F86 /* CategoryHeadrView.swift */,
@@ -335,6 +338,7 @@
 				A85F885C280AF62200D94D40 /* UserAvatar.swift in Sources */,
 				A8874ABB27F5809E001A6B8A /* SearchGroupTableViewCell.swift in Sources */,
 				A8AD7F8828200120000B7F86 /* CategoryHeadrView.swift in Sources */,
+				A820C68B282AE3B4008C480D /* LoadingViewController.swift in Sources */,
 				A8555E2D27EB0704004FF98E /* AppDelegate.swift in Sources */,
 				A832F59A27F13A5200EDAEA3 /* FriendsTableViewController.swift in Sources */,
 				A85F8858280AF3CA00D94D40 /* AvatarViewController.swift in Sources */,

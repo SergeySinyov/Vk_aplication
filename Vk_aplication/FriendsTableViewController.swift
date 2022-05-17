@@ -75,6 +75,7 @@ class FriendsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as? FriendTableViewCell
         let friendedFriend = friendedFriends[indexPath.section]
         let friend = friendedFriend.friends[indexPath.row]
@@ -95,6 +96,7 @@ class FriendsTableViewController: UITableViewController {
         photoVC.friendsPhotos = friend.photos
     }
 }
+
 
 
 

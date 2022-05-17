@@ -7,10 +7,12 @@
 
 import UIKit
 
-class AvatarViewController: UIViewController {
+class AvatarViewController: UITableViewController {
 
     @IBOutlet weak var avatarView: UIView!
     
 
 
 }
+
+

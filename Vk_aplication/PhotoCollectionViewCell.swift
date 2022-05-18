@@ -16,12 +16,12 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
         likeControl.addTarget(self, action: #selector(likeControlTapped), for: .touchUpInside)
+
     }
 
     @objc
     func  likeControlTapped() {
         likeControl.isSelected = !likeControl.isSelected
     }
-
-
+    
 }

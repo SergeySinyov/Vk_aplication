@@ -27,5 +27,4 @@ class LikeControl: UIControl {
             counterLable?.text = "\(likecounter)"
         }
     }
-
 }

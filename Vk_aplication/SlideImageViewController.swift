@@ -60,7 +60,8 @@ class SlideImageViewController: UIViewController {
         fimageView.image = UIImage(named: currentPhoto ?? "")
 
         simageView.frame = view.bounds
-        fimageView.isHidden = true
+        fimageView.isHidden = false
+        simageView.isHidden = true
 
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(viewDidSwipe(_:)))
         leftSwipe.direction = .left

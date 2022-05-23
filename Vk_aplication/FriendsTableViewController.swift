@@ -8,6 +8,7 @@
 import UIKit
 
 struct Friend {
+    let userId: UUID = .init()
     let name: String
     let avatar: String
     let photos: [String]
@@ -65,13 +66,13 @@ class FriendsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let friendedFriend = friendedFriends[section]
-        return friendedFriend.friends.count
+        //        let friendedFriend = friendedFriends[section]
+        return friendedFriends[section].friends.count
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let friendedFriend = friendedFriends[section]
-        return String(friendedFriend.charakter)
+        //        let friendedFriend = friendedFriends[section]
+        return String(friendedFriends[section].charakter)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,16 +80,20 @@ class FriendsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as? FriendTableViewCell
         let friendedFriend = friendedFriends[indexPath.section]
         let friend = friendedFriend.friends[indexPath.row]
+
         cell?.avatar.image = UIImage(named: friend.avatar)
         cell?.label.text = friend.name
+
         return cell ?? UITableViewCell()
 
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let cell = sender as? FriendTableViewCell,
-              let index = tableView.indexPath(for: cell)?.section,
-              let photoVC = segue.destination as? PhotoCollectionViewController else {
+        guard
+            let cell = sender as? FriendTableViewCell,
+            let index = tableView.indexPath(for: cell)?.section,
+            let photoVC = segue.destination as? PhotoCollectionViewController
+        else {
             return
         }
 

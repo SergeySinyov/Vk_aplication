@@ -11,7 +11,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var likeControl: LikeControl!
     @IBOutlet weak var imageView: UIImageView!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -24,4 +24,5 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         likeControl.isSelected = !likeControl.isSelected
     }
     
+
 }

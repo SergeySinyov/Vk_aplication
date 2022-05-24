@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Opy-oW-JZQ">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -251,11 +251,49 @@
                             <outlet property="delegate" destination="7uu-eb-dPu" id="Fh9-6p-JQF"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Фото" id="PQb-8p-Qsh"/>
+                    <navigationItem key="navigationItem" title="Фото" id="PQb-8p-Qsh">
+                        <barButtonItem key="rightBarButtonItem" title="Просмотр" id="yac-AL-v8Q">
+                            <connections>
+                                <action selector="showFullPhoto:" destination="1zw-SA-pgw" id="XiJ-KX-hei"/>
+                                <segue destination="l4S-Ao-95z" kind="show" id="kmf-QC-gAo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="044-uT-Bmv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1zw-SA-pgw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2561" y="-642"/>
+        </scene>
+        <!--Slide Image View Controller-->
+        <scene sceneID="69H-My-Si0">
+            <objects>
+                <viewController id="l4S-Ao-95z" customClass="SlideImageViewController" customModule="Vk_aplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uAr-pk-n5t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0q-Nr-Lfw">
+                                <rect key="frame" x="87" y="358" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tM-h7-Yls">
+                                <rect key="frame" x="87" y="141" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LKx-qV-KTe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rTE-ch-A9w"/>
+                    <connections>
+                        <outlet property="fimageView" destination="t0q-Nr-Lfw" id="LCX-JO-viw"/>
+                        <outlet property="simageView" destination="4tM-h7-Yls" id="xLA-Aw-Zb1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vi-hE-bCB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3357" y="-643"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="GPX-Ns-cj1">
@@ -670,7 +708,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20e-sM-MuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3422" y="-294"/>
+            <point key="canvasLocation" x="3357" y="73"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="ZSv-tw-iW8">
@@ -736,7 +774,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAZ-Hr-nt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4235" y="-294"/>
+            <point key="canvasLocation" x="4213" y="73"/>
         </scene>
         <!--Группы-->
         <scene sceneID="mwi-a8-g95">

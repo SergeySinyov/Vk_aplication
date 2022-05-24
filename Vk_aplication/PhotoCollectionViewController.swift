@@ -34,5 +34,11 @@ class PhotoCollectionViewController: UICollectionViewController {
         cell?.imageView.image = UIImage(named: friendPhoto)
         return cell ?? UICollectionViewCell()
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let slideVC = segue.destination as? SlideImageViewController {
+            slideVC.photos = friendsPhotos
+        }
+    }
 }
 

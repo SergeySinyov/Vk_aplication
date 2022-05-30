@@ -76,6 +76,7 @@ class NewsTableViewController: UITableViewController {
         cell?.firstName.text = news.firstNameUser
         cell?.pastName.text = news.pastNameUser
         cell?.textNews.text = news.textNews
+
         return cell ?? UITableViewCell()
     }
 }

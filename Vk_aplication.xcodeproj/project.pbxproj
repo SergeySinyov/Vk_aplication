@@ -31,6 +31,7 @@
 		A8874ABB27F5809E001A6B8A /* SearchGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8874ABA27F5809E001A6B8A /* SearchGroupTableViewCell.swift */; };
 		A8874ABE27F58901001A6B8A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8874ABD27F58901001A6B8A /* Model.swift */; };
 		A8874AC028094F62001A6B8A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8874ABF28094F62001A6B8A /* Group.swift */; };
+		A88810A4284496FC0063C6A5 /* PresentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88810A3284496FC0063C6A5 /* PresentSegue.swift */; };
 		A8AD7F80280B7292000B7F86 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AD7F7F280B7292000B7F86 /* LikeControl.swift */; };
 		A8AD7F86282000DF000B7F86 /* CategoryHeadrView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8AD7F85282000DF000B7F86 /* CategoryHeadrView.xib */; };
 		A8AD7F8828200120000B7F86 /* CategoryHeadrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AD7F8728200120000B7F86 /* CategoryHeadrView.swift */; };
@@ -84,6 +85,7 @@
 		A8874ABA27F5809E001A6B8A /* SearchGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupTableViewCell.swift; sourceTree = "<group>"; };
 		A8874ABD27F58901001A6B8A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A8874ABF28094F62001A6B8A /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A88810A3284496FC0063C6A5 /* PresentSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSegue.swift; sourceTree = "<group>"; };
 		A8AD7F7F280B7292000B7F86 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		A8AD7F85282000DF000B7F86 /* CategoryHeadrView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryHeadrView.xib; sourceTree = "<group>"; };
 		A8AD7F8728200120000B7F86 /* CategoryHeadrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeadrView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				A8555E2C27EB0704004FF98E /* AppDelegate.swift */,
 				A8555E2E27EB0704004FF98E /* SceneDelegate.swift */,
 				A8555E3227EB0704004FF98E /* Main.storyboard */,
+				A88810A3284496FC0063C6A5 /* PresentSegue.swift */,
 				A820C694283AC257008C480D /* SlideImageViewController.swift */,
 				A820C68A282AE3B3008C480D /* LoadingViewController.swift */,
 				A857F684282531FB00469C9B /* NewsLikeControl.swift */,
@@ -333,6 +336,7 @@
 				A850894227F479BD000B0D6B /* PhotoCollectionViewCell.swift in Sources */,
 				A8874ABE27F58901001A6B8A /* Model.swift in Sources */,
 				A832F59E27F13ACA00EDAEA3 /* PhotoCollectionViewController.swift in Sources */,
+				A88810A4284496FC0063C6A5 /* PresentSegue.swift in Sources */,
 				A832F5A027F13B5600EDAEA3 /* SearchGroupTableViewController.swift in Sources */,
 				A857F685282531FB00469C9B /* NewsLikeControl.swift in Sources */,
 				A8874AC028094F62001A6B8A /* Group.swift in Sources */,

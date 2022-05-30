@@ -129,7 +129,7 @@
                                 <connections>
                                     <outlet property="avatar" destination="w12-QM-OwG" id="2dY-u0-VFO"/>
                                     <outlet property="label" destination="Flk-ae-2mo" id="cRY-9F-ezW"/>
-                                    <segue destination="7uu-eb-dPu" kind="show" identifier="showPhotos" id="Mj5-Ai-BCe"/>
+                                    <segue destination="7uu-eb-dPu" kind="show" identifier="showPhotos" customClass="PresentSegue" customModule="Vk_aplication" customModuleProvider="target" id="Mj5-Ai-BCe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

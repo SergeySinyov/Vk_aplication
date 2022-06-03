@@ -24,8 +24,8 @@ class PresentSegue: UIStoryboardSegue {
         destination.view.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
 
         UIView.animateKeyframes(
-            withDuration: 0,
-            delay: 3,
+            withDuration: 1,
+            delay: 0,
             options: [],
             animations: {
 

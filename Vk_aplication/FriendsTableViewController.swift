@@ -98,6 +98,9 @@ class FriendsTableViewController: UITableViewController {
             return
         }
 
+        //Push navigationController
+//        navigationController?.pushViewController(photoVC, animated: true)
+
         let friend = friends[index]
         photoVC.friendsPhotos = friend.photos
     }

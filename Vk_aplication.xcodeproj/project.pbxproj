@@ -26,7 +26,6 @@
 		A8555E5027EB0707004FF98E /* Vk_aplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8555E4F27EB0707004FF98E /* Vk_aplicationUITestsLaunchTests.swift */; };
 		A8555E5D27EB07E8004FF98E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8555E5C27EB07E8004FF98E /* LoginViewController.swift */; };
 		A857F685282531FB00469C9B /* NewsLikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857F684282531FB00469C9B /* NewsLikeControl.swift */; };
-		A85F8858280AF3CA00D94D40 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F8857280AF3CA00D94D40 /* AvatarViewController.swift */; };
 		A85F885C280AF62200D94D40 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F885B280AF62200D94D40 /* UserAvatar.swift */; };
 		A8874ABB27F5809E001A6B8A /* SearchGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8874ABA27F5809E001A6B8A /* SearchGroupTableViewCell.swift */; };
 		A8874ABE27F58901001A6B8A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8874ABD27F58901001A6B8A /* Model.swift */; };
@@ -80,7 +79,6 @@
 		A8555E4F27EB0707004FF98E /* Vk_aplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vk_aplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8555E5C27EB07E8004FF98E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A857F684282531FB00469C9B /* NewsLikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLikeControl.swift; sourceTree = "<group>"; };
-		A85F8857280AF3CA00D94D40 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
 		A85F885B280AF62200D94D40 /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
 		A8874ABA27F5809E001A6B8A /* SearchGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupTableViewCell.swift; sourceTree = "<group>"; };
 		A8874ABD27F58901001A6B8A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				A8AD7F85282000DF000B7F86 /* CategoryHeadrView.xib */,
 				A8AD7F8728200120000B7F86 /* CategoryHeadrView.swift */,
 				A8AD7F7F280B7292000B7F86 /* LikeControl.swift */,
-				A85F8857280AF3CA00D94D40 /* AvatarViewController.swift */,
 				A85F885B280AF62200D94D40 /* UserAvatar.swift */,
 				A8874ABF28094F62001A6B8A /* Group.swift */,
 				A8874ABA27F5809E001A6B8A /* SearchGroupTableViewCell.swift */,
@@ -349,7 +346,6 @@
 				A820C68B282AE3B4008C480D /* LoadingViewController.swift in Sources */,
 				A8555E2D27EB0704004FF98E /* AppDelegate.swift in Sources */,
 				A832F59A27F13A5200EDAEA3 /* FriendsTableViewController.swift in Sources */,
-				A85F8858280AF3CA00D94D40 /* AvatarViewController.swift in Sources */,
 				A8555E2F27EB0704004FF98E /* SceneDelegate.swift in Sources */,
 				A850894627F4CA97000B0D6B /* GroupTableViewCell.swift in Sources */,
 				A8AD7F8E2822DFE1000B7F86 /* NewsTableViewCell.swift in Sources */,

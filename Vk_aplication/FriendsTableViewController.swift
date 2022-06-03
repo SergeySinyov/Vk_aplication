@@ -63,6 +63,7 @@ class FriendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,6 +97,9 @@ class FriendsTableViewController: UITableViewController {
         else {
             return
         }
+
+        //Push navigationController
+//        navigationController?.pushViewController(photoVC, animated: true)
 
         let friend = friends[index]
         photoVC.friendsPhotos = friend.photos

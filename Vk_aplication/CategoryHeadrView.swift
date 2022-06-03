@@ -10,5 +10,4 @@ import UIKit
 class CategoryHeadrView: UITableViewHeaderFooterView {
 
 
-
 }

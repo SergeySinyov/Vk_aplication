@@ -64,7 +64,8 @@ class SearchGroupTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFilmsGroup", for: indexPath) as? SearchGroupTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFilmsGroup",
+                                                 for: indexPath) as? SearchGroupTableViewCell
         let groupedGroup = groupedGroups[indexPath.section]
         let group = groupedGroup.groups[indexPath.row]
         cell?.avatarFilms.image = UIImage(named: group.avatar)
@@ -73,7 +74,9 @@ class SearchGroupTableViewController: UITableViewController {
 
     }
 
-    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    override func tableView(_ tableView: UITableView,
+                            trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+    -> UISwipeActionsConfiguration? {
 
         let group = allGroups[indexPath.row]
         let isSubscribe = myGroups.contains { myGroup in
@@ -83,7 +86,9 @@ class SearchGroupTableViewController: UITableViewController {
         let action: UIContextualAction
         if isSubscribe {
 
-            action = UIContextualAction(style: .normal, title: "Отписаться", handler: { [weak self] _, _, complete  in
+            action = UIContextualAction(style: .normal,
+                                        title: "Отписаться",
+                                        handler: { [weak self] _, _, complete  in
                 guard let self = self else { return }
 
                 self.myGroups.removeAll(where: { $0.id == group.id })
@@ -94,7 +99,9 @@ class SearchGroupTableViewController: UITableViewController {
 
         } else {
 
-            action = UIContextualAction(style: .normal, title: "Подписаться", handler: { [weak self] _, _, complete  in
+            action = UIContextualAction(style: .normal,
+                                        title: "Подписаться",
+                                        handler: { [weak self] _, _, complete  in
                 guard let self = self else { return }
 
                 self.myGroups.append(group)

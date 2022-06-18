@@ -23,13 +23,16 @@ class PhotoCollectionViewController: UICollectionViewController {
 
     }
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 numberOfItemsInSection section: Int) -> Int {
         return friendsPhotos.count
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
+    override func collectionView(_ collectionView: UICollectionView,
+                                 cellForItemAt indexPath: IndexPath)
     -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as? PhotoCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell",
+                                                      for: indexPath) as? PhotoCollectionViewCell
         let friendPhoto = friendsPhotos[indexPath.item]
         cell?.imageView.image = UIImage(named: friendPhoto)
         return cell ?? UICollectionViewCell()

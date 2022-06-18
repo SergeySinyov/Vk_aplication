@@ -28,12 +28,15 @@ class MyGroupTableViewController: UITableViewController {
 
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView,
+                            numberOfRowsInSection section: Int) -> Int {
         return searhGroups.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFootballGroup", for: indexPath) as? GroupTableViewCell
+    override func tableView(_ tableView: UITableView,
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCellFootballGroup",
+                                                 for: indexPath) as? GroupTableViewCell
         let group = searhGroups[indexPath.row]
         cell?.avatarGroupFootball.image = UIImage(named: group.avatar)
         cell?.labelFootbal.text = group.name

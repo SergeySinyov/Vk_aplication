@@ -9,13 +9,15 @@ import UIKit
 
 class Session {
 
-    static let session = Session()
+    static let instance = Session()
 
     private init() {}
 
-    let session = Session()
-
-    var token: String = ""
+    var token: String = "I9QGwAWLscWRSnlUxqxa"
     var userId: Int = 0
 }
+
+
+
+
 

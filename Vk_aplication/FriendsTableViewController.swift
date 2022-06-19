@@ -23,16 +23,36 @@ struct FriendedFriend {
 class FriendsTableViewController: UITableViewController {
 
     var friends: [Friend] = [
-        Friend(name: "Синёв Сергей", avatar: "avatar", photos: ["photoOne", "photoTwo", "photoThree"]),
-        Friend(name: "Андреев Николай", avatar: "avatarTwo", photos: ["photoFour", "photoFive", "photoSix"]),
-        Friend(name: "Ефремова Елена", avatar: "avatarThree", photos: ["photoSeven", "photoEight", "photoNine"]),
-        Friend(name: "Голубева Юлия", avatar: "avatarFour", photos: ["photoTen", "photoEleven", "photoTwelve"]),
-        Friend(name: "Ковалёв Данил", avatar: "avatarFive", photos: ["photoThirteen", "photoFourteen", "photoFiveteen"]),
-        Friend(name: "Морева Мария", avatar: "avatarSix", photos: ["photoSixteen", "photoSeventeen", "photoEighteen"]),
-        Friend(name: "Гаврилов Николай", avatar: "avatarSeven", photos: ["photoNineteen", "photoTwenty", "photoTwentyOne"]),
-        Friend(name: "Шварц Томас", avatar: "avatarEight", photos: ["photoTwentyTwo", "photoTwentyThree", "photoTwentyFour"]),
-        Friend(name: "Джобс Стив", avatar: "avatarNine", photos: ["photoTwentyFive", "photoTwentySix", "photoTwentySeven"]),
-        Friend(name: "Цукерберк Марк", avatar: "avatarTen", photos: ["photoTwentyEight", "photoTwentyNine", "photoThirty"])
+        Friend(name: "Синёв Сергей",
+               avatar: "avatar",
+               photos: ["photoOne", "photoTwo", "photoThree"]),
+        Friend(name: "Андреев Николай",
+               avatar: "avatarTwo",
+               photos: ["photoFour", "photoFive", "photoSix"]),
+        Friend(name: "Ефремова Елена",
+               avatar: "avatarThree",
+               photos: ["photoSeven", "photoEight", "photoNine"]),
+        Friend(name: "Голубева Юлия",
+               avatar: "avatarFour",
+               photos: ["photoTen", "photoEleven", "photoTwelve"]),
+        Friend(name: "Ковалёв Данил",
+               avatar: "avatarFive",
+               photos: ["photoThirteen", "photoFourteen", "photoFiveteen"]),
+        Friend(name: "Морева Мария",
+               avatar: "avatarSix",
+               photos: ["photoSixteen", "photoSeventeen", "photoEighteen"]),
+        Friend(name: "Гаврилов Николай",
+               avatar: "avatarSeven",
+               photos: ["photoNineteen", "photoTwenty", "photoTwentyOne"]),
+        Friend(name: "Шварц Томас",
+               avatar: "avatarEight",
+               photos: ["photoTwentyTwo", "photoTwentyThree", "photoTwentyFour"]),
+        Friend(name: "Джобс Стив",
+               avatar: "avatarNine",
+               photos: ["photoTwentyFive", "photoTwentySix", "photoTwentySeven"]),
+        Friend(name: "Цукерберк Марк",
+               avatar: "avatarTen",
+               photos: ["photoTwentyEight", "photoTwentyNine", "photoThirty"])
     ]
 
     var friendedFriends: [FriendedFriend] {
@@ -78,7 +98,8 @@ class FriendsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as? FriendTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell",
+                                                 for: indexPath) as? FriendTableViewCell
         let friendedFriend = friendedFriends[indexPath.section]
         let friend = friendedFriend.friends[indexPath.row]
 
@@ -105,6 +126,12 @@ class FriendsTableViewController: UITableViewController {
         photoVC.friendsPhotos = friend.photos
     }
 }
+
+
+
+
+
+
 
 
 

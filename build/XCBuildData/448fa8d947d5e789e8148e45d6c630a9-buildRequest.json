@@ -1,0 +1,52 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e986bca5acd4417c18b242ce395f476e7f7"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e982cfe0ef0697c1e765db9cc2e9ec6e875"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98ca7194d5722f7cf08904c559a23f2c3b"
+    }
+  ],
+  "containerPath" : "/Users/n1nt3ndo/Desktop/CourseTwo/Vk_aplication/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/n1nt3ndo/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/n1nt3ndo/Library/Developer/Xcode/DerivedData/Pods-fbqpmtxfppnemkepwvvwarfuphlc/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/n1nt3ndo/Library/Developer/Xcode/DerivedData/Pods-fbqpmtxfppnemkepwvvwarfuphlc/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

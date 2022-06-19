@@ -1,0 +1,5 @@
+Target dependency graph (3 targets)
+Pods-Vk_aplication in Pods, no dependencies
+Pods-Vk_aplication-Vk_aplicationUITests in Pods, no dependencies
+Pods-Vk_aplicationTests in Pods, depends on:
+Pods-Vk_aplication in Pods (explicit)

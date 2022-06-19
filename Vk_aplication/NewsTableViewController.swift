@@ -23,10 +23,30 @@ struct NewsAppend {
 class NewsTableViewController: UITableViewController {
 
     var news: [News] = [
-        News(firstNameUser: "Сергей", pastNameUser: "Синёв", textNews: "Сегодня состоялся первый запуск ракеты FalconX, с экспедицыей на Марс", userAvatar: "avatar", imageNews: "photoSeventeen"),
-        News(firstNameUser: "Николай", pastNameUser: "Андреев", textNews: "Самое лучшее начало дня - это чашка крепкого кофе", userAvatar: "avatarTwo", imageNews: "photoThirteen"),
-        News(firstNameUser: "Елена", pastNameUser: "Ефремова", textNews: "Сегодня отмечаем День святого Валентина - Всех с Праздником дорогие мои!!!", userAvatar: "avatarThree", imageNews: "photoThirty"),
-        News(firstNameUser: "Николай", pastNameUser: "Гаврилов", textNews: "Самое что есть лучшее это отправиться в поездку на автомобиле, можно многое что переосмыслить и остаться на едине с самимо с собой, друзья советую паковать чемоданы и отправляться в поездку!!!", userAvatar: "avatarSeven", imageNews: "photoThree")]
+        News(firstNameUser: "Сергей",
+             pastNameUser: "Синёв",
+             textNews: "Сегодня состоялся первый запуск ракеты FalconX, с экспедицыей на Марс",
+             userAvatar: "avatar",
+             imageNews: "photoSeventeen"),
+        News(firstNameUser: "Николай",
+             pastNameUser: "Андреев",
+             textNews: "Самое лучшее начало дня - это чашка крепкого кофе",
+             userAvatar: "avatarTwo",
+             imageNews: "photoThirteen"),
+        News(firstNameUser: "Елена",
+             pastNameUser: "Ефремова",
+             textNews: "Сегодня отмечаем День святого Валентина - Всех с Праздником дорогие мои!!!",
+             userAvatar: "avatarThree",
+             imageNews: "photoThirty"),
+        News(firstNameUser: "Николай",
+             pastNameUser: "Гаврилов",
+             textNews: """
+             Самое что есть лучшее это отправиться в поездку на автомобиле,
+             можно многое что переосмыслить и остаться на едине с самимо с собой,
+             друзья советую паковать чемоданы и отправляться в поездку!!!
+             """,
+             userAvatar: "avatarSeven",
+             imageNews: "photoThree")]
 
     var newsAppend: [NewsAppend] {
         var result = [NewsAppend] ()
@@ -68,7 +88,8 @@ class NewsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleNewsCell", for: indexPath) as? NewsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleNewsCell",
+                                                 for: indexPath) as? NewsTableViewCell
         let newsAppend = newsAppend[indexPath.section]
         let news = newsAppend.news[indexPath.row]
         cell?.avatarNews.image = UIImage(named: news.userAvatar)

@@ -43,7 +43,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Войти"/>
                                         <connections>
                                             <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kb1-aO-pq6"/>
-                                            <segue destination="Opy-oW-JZQ" kind="presentation" modalPresentationStyle="fullScreen" id="myd-38-W21"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -75,6 +74,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="22r-6K-7IE" secondAttribute="bottom" id="wEL-4P-oPx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bj2-QQ-K2c"/>
                     <connections>
                         <outlet property="imageView" destination="u5F-Pf-UFD" id="Sh7-uS-zca"/>
                         <outlet property="passwordTextFild" destination="S5O-Lo-pWw" id="nmc-4e-eUP"/>
@@ -414,6 +414,7 @@
                     </view>
                     <connections>
                         <outlet property="webView" destination="pPI-1v-yKc" id="yKf-pA-kXl"/>
+                        <segue destination="Opy-oW-JZQ" kind="presentation" identifier="showContent" modalPresentationStyle="fullScreen" id="aCM-IW-mLL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfp-id-RcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

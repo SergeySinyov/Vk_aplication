@@ -8,6 +8,11 @@ target 'Vk_aplication' do
   # Pods for Vk_aplication
   pod 'Alamofire', '~> 5.6'
 
+  pod 'RealmSwift', '~> 10.28'
+
+  pod 'SwiftyJSON'
+
+
   target 'Vk_aplicationTests' do
     inherit! :search_paths
     # Pods for testing
